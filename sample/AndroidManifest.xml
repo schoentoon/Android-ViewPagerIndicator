@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.viewpagerindicator.sample"
-    android:versionCode="30"
-    android:versionName="2.2.3">
+    android:versionCode="50"
+    android:versionName="2.3.1">
 
     <uses-sdk
         android:minSdkVersion="4"
@@ -21,9 +21,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
-        
-        
+
+
+
         <!-- CIRCLE INDICATOR -->
         <activity
             android:name=".SampleCirclesDefault"
@@ -84,9 +84,48 @@
                 <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
             </intent-filter>
         </activity>
-        
-        
-        
+
+
+
+        <!-- LINE INDICATOR -->
+        <activity
+                android:name=".SampleLinesDefault"
+                android:label="Lines/Default">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".SampleLinesStyledLayout"
+                android:label="Lines/Styled (via layout)"
+                android:theme="@android:style/Theme.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".SampleLinesStyledMethods"
+                android:label="Lines/Styled (via methods)"
+                android:theme="@android:style/Theme.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".SampleLinesStyledTheme"
+                android:label="Lines/Styled (via theme)"
+                android:theme="@style/StyledIndicators">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+
+
+
         <!-- TITLE INDICATOR -->
         <activity
             android:name=".SampleTitlesCenterClickListener"
@@ -155,9 +194,9 @@
                 <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
             </intent-filter>
         </activity>
-        
-        
-        
+
+
+
         <!-- TAB INDICATOR -->
         <activity
             android:name=".SampleTabsDefault"
@@ -177,6 +216,53 @@
                 <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
             </intent-filter>
         </activity>
-        
+
+
+
+        <!-- UNDERLINE INDICATOR -->
+        <activity
+                android:name=".SampleUnderlinesDefault"
+                android:label="Underlines/Default">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".SampleUnderlinesNoFade"
+                android:label="Underlines/No Fade">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".SampleUnderlinesStyledLayout"
+                android:label="Underlines/Styled (via layout)"
+                android:theme="@android:style/Theme.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".SampleUnderlinesStyledMethods"
+                android:label="Underlines/Styled (via methods)"
+                android:theme="@android:style/Theme.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".SampleUnderlinesStyledTheme"
+                android:label="Underlines/Styled (via theme)"
+                android:theme="@style/StyledIndicators">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+
     </application>
 </manifest>

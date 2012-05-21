@@ -1,6 +1,31 @@
 Change Log
 ==========
 
+Version 2.3.1 *(2012-05-19)*
+----------------------------
+
+ * Fix: Corrected filename with erroneous lowercase letter.
+
+
+Version 2.3.0 *(2012-05-19)*
+----------------------------
+
+ * New `LinePageIndicator`! Draws small indicators lines much like the circle
+   indicator but much more subtle.
+ * New `UnderlinePageIndicator`! Acts like the indicator on the Ice Cream
+   Sandwich application launcher.
+ * Circle indicator now uses `android:orientation` rather than custom attribute.
+ * Title indicator adapter callback now uses the standard `getPageTitle(int)`
+   method introduced in the r6 version of the support library.
+ * Title indicator now uses `android:textSize` and `android:textColor` in its
+   styles.
+ * Fix: Do not create objects in drawing, layout, or measurement steps of each
+   indicator.
+ * Fix: Improve offset detection when page margins are in use on the pager.
+ * Maven: The dependency on the support library is now using an artifact from
+   central rather than requiring you to deploy your own locally
+
+
 Version 2.2.3 *(2012-01-26)*
 ----------------------------
 
